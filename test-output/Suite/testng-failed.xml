@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="spaceName" value="Space2"/>
+  <parameter name="password" value="Testing1234"/>
+  <parameter name="appURL" value="https://id.atlassian.com/login"/>
+  <parameter name="userName" value="medel.vecina@gmail.com"/>
+  <parameter name="browserType" value="firefox"/>
+  <listeners>
+    <listener class-name="base.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testsuites.TestCase1">
+        <methods>
+          <include name="setUp"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="testMethod1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testsuites.TestCase1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
