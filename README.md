@@ -19,5 +19,6 @@ http://automationpractice.com/index.php*
 - Screenshot and highlight the element when test fails
 
 **How to Run:**
+- **Go to Help > Eclipse Marketplace. Search for TestNG then install.**
 - **Right-click execPlanIT.xml**
 - **Run As 'TestNG Suite'**
